@@ -16,29 +16,33 @@
         }
     ],
     "paths": {
-        "/user": {
+        "/api/users": {
             "get": {
                 "tags": [
                     "User"
                 ],
-                "summary": "Retorno de usuário Teste",
-                "operationId": "23679253d16f34d2972249751e3631dd",
+                "summary": "Retorna todos os usuários",
+                "operationId": "c457726701591d1183b53aa71fc13441",
                 "responses": {
                     "200": {
-                        "description": "Usuário Teste",
+                        "description": "Lista de usuários",
                         "content": {
                             "application/json": {
                                 "schema": {
                                     "type": "array",
                                     "items": {
                                         "properties": {
+                                            "id": {
+                                                "type": "integer",
+                                                "example": 1
+                                            },
                                             "name": {
                                                 "type": "string",
                                                 "example": "Savio Pereira"
                                             },
-                                            "type_id": {
-                                                "type": "integer",
-                                                "example": 1
+                                            "email": {
+                                                "type": "string",
+                                                "example": "savio@example.com"
                                             }
                                         },
                                         "type": "object"
