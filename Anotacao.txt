@@ -1,0 +1,14 @@
+
+
+Documentando uma API em Laravel + Swagger
+https://medium.com/@saviorenato/documentando-uma-api-laravel-swagger-c550dc0d09f1
+
+Instalando o pacote do l5-swagger
+composer require darkaonline/l5-swagger
+
+Publicando/Criando o arquivo de configurações
+php artisan vendor:publish --provider "L5Swagger\L5SwaggerServiceProvider" ou php artisan l5-swagger:publish
+
+Gerando a Documentação
+php artisan l5-swagger:generate
+
